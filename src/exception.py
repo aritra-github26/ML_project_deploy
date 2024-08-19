@@ -17,6 +17,7 @@ class CustomException(Exception):
     
 
 if __name__ == '__main__':
+    # this is for testing the exception handling part only
     try:
         a = 1 / 0
     except Exception as e:
