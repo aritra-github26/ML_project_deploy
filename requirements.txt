@@ -3,4 +3,7 @@ pandas
 scikit-learn
 dill
 sys
+ipykernel
+matplotlib
+seaborn
 -e .
