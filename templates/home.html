@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Predict Ticket Sales</title>
+  </head>
+  <body>
+    <h1>Predict Ticket Sales</h1>
+    <form action="/predict" method="post">
+      <label for="film_code">Film Code:</label>
+      <input type="number" id="film_code" name="film_code" required><br><br>
+      
+      <label for="cinema_code">Cinema Code:</label>
+      <input type="number" id="cinema_code" name="cinema_code" required><br><br>
+      
+      <label for="show_time">Show Time:</label>
+      <input type="number" id="show_time" name="show_time" required><br><br>
+      
+      <label for="occu_perc">Occupancy Percentage:</label>
+      <input type="number" id="occu_perc" name="occu_perc" required><br><br>
+      
+      <label for="ticket_price">Ticket Price:</label>
+      <input type="number" id="ticket_price" name="ticket_price" required><br><br>
+      
+      <label for="capacity">Capacity:</label>
+      <input type="number" id="capacity" name="capacity" required><br><br>
+      
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required><br><br>
+      
+      <input type="submit" value="Predict Ticket Sales">
+    </form>
+    {% if prediction_text %}
+      <p>{{ prediction_text }}</p>
+    {% endif %}
+  </body>
+</html>

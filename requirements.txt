@@ -1,8 +1,9 @@
 numpy
 pandas
 scikit-learn
-dill
+joblib
 ipykernel
 matplotlib
 seaborn
+flask
 -e .
